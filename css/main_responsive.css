@@ -1,0 +1,36 @@
+@media only screen and (max-width: 962px) {
+    .name_daniel {
+        font-size: 50px;
+    }
+    .desc_daniel {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .name_daniel {
+        font-size: 30px;
+    }
+    .desc_daniel {
+        font-size: 15px;
+    }
+    .wrapper_flex {
+        text-align: center;
+        flex-direction: column;
+        padding: 30px 0px
+    }
+    .trans_90 {
+        transform: rotate(0deg);
+    }
+    .trans_-90 {
+        transform: rotate(0deg);
+    }
+    
+    .line_left {
+display: none
+}
+
+.line_right {
+display: none
+}
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+
+<head>
+
+    <title>Daniel Sissa</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Daniel Sissa">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta property="og:title" content="Daniel Sissa" />
+    <meta property="og:image" content="http://riot.live/img/fb_thumbnail.jpg" />
+    <meta property="og:description" content="Yo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://danielsissa.com/" />
+
+
+
+
+    <!-- Web fonts and Web Icons -->
+    <link rel="stylesheet" href="./css/pageloader.css">
+    <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Main CSS files -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main_responsive.css">
+
+
+</head>
+
+<body id="" class="">
+    <div id="particles-js"></div>
+    <!--<canvas width="1000" height="1000" style="width:100vw;height:auto" id="cube" class="cube_center"></canvas>-->
+    <div class="wrapper_flex">
+        <div class="trans_-90 desc_daniel">
+            <a href="www.animeishon.studio" _target="blank" >what i do</a>
+        </div>
+        <div class="name_daniel">
+            daniel_sissa
+        </div>
+        <div class="trans_90 desc_daniel">
+           <a href="www.animeishon.studio" _target="blank">contact</a> 
+        </div>
+    </div>
+    
+    <div class="line_left"></div>
+    <div class="line_right"></div>
+    
+    <div class="cuadro"></div>
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="./js/particle.js"></script>
+    <script src="./js/tilt.jquery.js"></script>
+    <script src="./js/pinhole.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.0.2/particles.min.js"></script>
+</body>
+
+
+
+<script>
+    // cube and circles
+    (function() {
+        var rx = 0;
+        var ry = 0;
+        var cr1z = 0;
+        var cr2y = 0;
+        var idx = 0;
+
+        function step(timestamp) {
+            var p = new Pinhole()
+            p.begin()
+            p.drawCube(-0.2, -0.2, -0.2, 0.2, 0.2, 0.2)
+            // rotate a little on the X and Y axis.
+            p.rotate(Math.PI / 3, Math.PI / 6, 0)
+            p.colorize("white")
+            p.end()
+            // rotate the entire scene
+            p.rotate(rx, ry, 0)
+            p.render(document.getElementById("cube"), {
+                bgcolor: 'green'
+            })
+            window.requestAnimationFrame(step);
+            rx += Math.PI * 2 / 1200; // rotate per step for the entire scene
+            ry += Math.PI * 2 / 1200; // rotate per step for the entire scene
+            p.render(canvasElement, {
+                bgcolor: 'red'
+            });
+
+        }
+        window.requestAnimationFrame(step);
+    }())
+</script>
+
+</html>
