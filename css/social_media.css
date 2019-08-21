@@ -11,14 +11,7 @@ p > a:hover{
     color: #d9d9d9;
     text-decoration:  underline;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin:  1% 0 1% 0;
-}
+
 ._12 {
     font-size: 1.2em;
 }
@@ -33,6 +26,7 @@ ul {
     width: 350px;
     display:block;
     margin: 0 auto;
+    text-align: center;
 }
 .social-icon {
     color: #fff;
@@ -120,4 +114,12 @@ ul.social-icons {
 }
 .fa-google-plus:hover {
     background-color: #e25714;
+}
+
+i.fa:hover {
+    color: white;
+}
+i.fa {
+    background: white;
+    color: #081eff;
 }
