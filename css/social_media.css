@@ -116,6 +116,32 @@ ul.social-icons {
     background-color: #e25714;
 }
 
+.fa-behance {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-behance:hover {
+    background-color: #e25714;
+}
+
+.fa-instagram {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-instagram:hover {
+    background-color: #e25714;
+}
+
 i.fa:hover {
     color: white;
 }
