@@ -126,11 +126,11 @@ ul.social-icons {
     background-color: #322f30;
 }
 .fa-behance:hover {
-    background-color: #e25714;
+    background-color: #1769ff;
 }
 
 .fa-instagram {
-    padding:10px 9px;
+    padding:10px 11px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -139,7 +139,7 @@ ul.social-icons {
     background-color: #322f30;
 }
 .fa-instagram:hover {
-    background-color: #e25714;
+    background-color: #C13584;
 }
 
 i.fa:hover {
